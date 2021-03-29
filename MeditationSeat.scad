@@ -1,6 +1,6 @@
 // MeditationSeat.scad - A simple Meditation seat,
 // requireing only one size of planks (+ screws).
-// This is a 3D Model (CAD), which can edited
+// This is a 3D Model (CAD), which can be edited
 // with the free software OpenSCAD.
 //
 // License:
