@@ -23,6 +23,9 @@ sawWidth = 3; // [mm]
 // WARNING
 // If you change things after this line, things might go wrong.
 
+SHOW_WORK_TEMPLATE = true;
+SHOW_ASSEMBLED = true;
+
 legLower = heightLower - (plankHeight * (1 + 1/cos(angle))); // [mm]
 legUpper = legLower + (plankWidth * sin(angle)); // [mm]
 legDist = lengthLower/2 - 2*plankHeight; // [mm]
@@ -39,20 +42,25 @@ siStick = 15; // [mm]
 
 
 
-color("red")
-translate([0, 0, heightLower/2])
-bigLabel("Assembled");
+if (SHOW_ASSEMBLED) {
+	MeditationSeat();
+}
 
-MeditationSeat();
+if (SHOW_WORK_TEMPLATE && SHOW_ASSEMBLED) {
+	color("red")
+	translate([0, 0, heightLower/2])
+	bigLabel("Assembled");
 
+	color("green")
+	translate([0, 0, 2*heightLower])
+	bigLabel("Work-Template");
+}
 
-color("green")
-translate([0, 0, 2*heightLower])
-bigLabel("Work-Template");
-
-translate([0, totalLength / 2, 2*heightLower])
-rotate([90, 0, 0])
-MeditationSeatParts();
+if (SHOW_WORK_TEMPLATE) {
+	translate([0, totalLength / 2, 2*heightLower])
+	rotate([90, 0, 0])
+	MeditationSeatParts();
+}
 
 
 
