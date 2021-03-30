@@ -64,49 +64,65 @@ module bigLabel(label, size=50) {
 		text(label, size, "Courier New");
 	}
 
+// A piece of plank
+module plank(length) {
+
+		cube([plankWidth, plankHeight, length]);
+	}
+
+// A piece of size indicator "band"
+module si(length) {
+
+		translate([-siWidth/2, 0, 0])
+			cube([siWidth, siThick, length]);
+	}
 
 // The part touching the bottom
-module sizeIndicator(size, label) {
+module sizeIndicator(size, label, labelInv=true) {
 
 		labelStr = is_undef(label) ?
 			str(round(size) / 10.0, "cm") :
 			label;
-	
+
 		translate([0, -siStick, 0])
 		%union() {
-			cube([size, siThick, siWidth]);
-			cube([siThick, siStick, siWidth]);
-			translate([size - siThick, 0, 0])
-				cube([siThick, siStick, siWidth]);
-			translate([(size - siThick) / 2, -siStick, 0])
-				cube([siThick, siStick, siWidth]);
-			translate([(size - siThick - ((len(labelStr) - 1) * siWidth)) / 2, -(siStick + siWidth), 0])
+			si(size);
+			translate([0, siStick, 0])
+				rotate([90, 0, 0])
+				si(siStick);
+			translate([0, siStick, size - siThick])
+				rotate([90, 0, 0])
+				si(siStick);
+			translate([0, 0, (size - siThick) / 2])
+				rotate([90, 0, 0])
+				si(siStick);
+			translate([0, -(siStick + siThick), (size - siThick + ((len(labelStr) - 1) * siWidth)) / 2])
+				translate([0, labelInv ? -siWidth : 0, 0])
+				rotate([labelInv ? 0 : 180, 90, 0])
 				text(labelStr, siWidth, "Courier New");
 		}
 	}
 	
 // The part touching the bottom
 module bottom() {
-		cube([plankWidth, plankHeight, lengthUpper]);
+		plank(lengthUpper);
 	
 		translate([plankWidth/2, 0, 0])
-		rotate([0, -90, 0])
 		sizeIndicator(lengthUpper);
 	}
 
 // The part touching the ground
 module ground() {
-		cube([plankWidth, plankHeight, lengthLower]);
+		plank(lengthLower);
 	
 		translate([plankWidth/2, 0, 0])
-		rotate([0, -90, 0])
 		sizeIndicator(lengthLower);
 	}
 
 // A leg
 module leg() {
 		difference() {
-			cube([plankWidth, plankHeight, legUpper]);
+			plank(legUpper);
 		
 			// This makes the legs angled
 			translate([0, BIG/2, legLower])
@@ -115,21 +131,18 @@ module leg() {
 			cube([BIG, BIG, BIG]);
 		}
 	
-		translate([plankWidth, 0, 0])
-		rotate([0, -90, 0])
+		translate([plankWidth - siWidth/2, 0, 0])
 		sizeIndicator(legUpper);
 	
-		translate([plankWidth/2, 0, 0])
-		rotate([0, -90, 0])
+		translate([siWidth/2, 0, 0])
 		sizeIndicator(legLower);
 	}
 	
 // The leg connector
 module bridge() {
-		cube([plankWidth, plankHeight, legDist]);
+		plank(legDist);
 	
 		translate([plankWidth/2, 0, 0])
-		rotate([0, -90, 0])
 		sizeIndicator(legDist);
 	}
 
@@ -156,7 +169,7 @@ module MeditationSeatParts() {
 	
 	posEnd = posBottom + lengthUpper;
 	
-	rotate([0, -90, 0])
+	translate([-siWidth/2, 0, 0])
 	sizeIndicator(totalLength);
 }
 
