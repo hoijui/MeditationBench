@@ -171,6 +171,15 @@ module MeditationSeatParts() {
 	
 	translate([-siWidth/2, 0, 0])
 	sizeIndicator(totalLength);
+	
+	translate([0, plankHeight, 0])
+	rotate([90, 90, 0])
+	sizeIndicator(plankHeight);
+	
+	translate([0, plankHeight/2, 0])
+	rotate([0, 90, 0])
+	rotate([0, 0, 90])
+	sizeIndicator(plankWidth);
 }
 
 module MeditationSeat(size=15) {
