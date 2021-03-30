@@ -12,12 +12,12 @@
 // NOTE
 // The most important parameters
 
-angle = 12; // [degrees]
+angle = 10; // [degrees]
 plankWidth = 110; // [mm]
 plankHeight = 24; // [mm]
 lengthUpper = 500; // [mm]
-lengthLower = 180; // [mm]
-heightLower = 173; // [mm]
+lengthLower = 196; // [mm]
+heightLower = 160; // [mm]
 sawWidth = 3; // [mm]
 
 // WARNING
