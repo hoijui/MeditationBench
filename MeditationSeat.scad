@@ -59,7 +59,7 @@ MeditationSeatParts();
 // Big textual label
 module bigLabel(label, size=50) {
 		
-		rotate([90, 0, 90])
+		%rotate([90, 0, 90])
 		translate([(-(len(label) - 2) * size) / 2, 0, plankWidth + 4*size])
 		text(label, size, "Courier New");
 	}
