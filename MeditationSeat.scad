@@ -21,7 +21,7 @@ heightLower = 160; // [mm]
 sawWidth = 3; // [mm]
 
 // WARNING
-// If you change things after this line, things might go wrong.
+// If you make changes after this line, things might go wrong.
 
 SHOW_WORK_TEMPLATE = true;
 SHOW_ASSEMBLED = true;
