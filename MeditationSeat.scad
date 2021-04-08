@@ -19,6 +19,7 @@ lengthUpper = 500; // [mm]
 lengthLower = 196; // [mm]
 heightLower = 160; // [mm]
 sawWidth = 3; // [mm]
+seatFolds = 2; // 1, 2, 3, ...
 
 // WARNING
 // If you make changes after this line, things might go wrong.
@@ -30,7 +31,8 @@ legLower = heightLower - (plankHeight * (1 + 1/cos(angle))); // [mm]
 legUpper = legLower + (plankWidth * sin(angle)); // [mm]
 legDist = lengthLower/2 - 2*plankHeight; // [mm]
 totalLength =
-	lengthUpper + sawWidth +
+	(lengthUpper + sawWidth) * seatFolds +
+	(plankWidth * seatFolds + sawWidth) * sign(seatFolds - 1) +
 	lengthLower + sawWidth +
 	legLower + sawWidth +
 	legDist + sawWidth +
@@ -119,12 +121,40 @@ module bottom() {
 		sizeIndicator(lengthUpper);
 	}
 
+module bottomStacked() {
+
+	// The part touching the bottom
+	for (sfi = [0 : seatFolds-1]) {
+		let (xBottomI = sfi * plankWidth)
+		{ // TODO
+			translate([xBottomI - ((seatFolds - 1) * plankWidth / 2), 0, 0])
+			bottom();
+		}
+	}
+	
+	if (sign(seatFolds - 1) > 0) {
+		rotate([0, -90, 0])
+		translate([(lengthUpper - plankWidth) / 2, -plankHeight, -(seatFolds/2 + 0.5) * plankWidth])
+		uniter();
+	}
+}
+
 // The part touching the ground
 module ground() {
 		plank(lengthLower);
 	
 		translate([plankWidth/2, 0, 0])
 		sizeIndicator(lengthLower);
+	}
+
+// The part holding the bottom-touching-parts together.
+// This is only used in case of seatFolds > 1.
+module uniter() {
+		uniterLength = plankWidth * seatFolds;
+		plank(uniterLength);
+	
+		translate([plankWidth/2, 0, 0])
+		sizeIndicator(uniterLength);
 	}
 
 // A leg
@@ -167,16 +197,33 @@ module MeditationSeatParts() {
 	translate([0, 0, posBridge])
 	bridge();
 	
-	posGround = posBridge + legDist + sawWidth;
+	posGround1 = posBridge + legDist + sawWidth;
+	
+	posUniter = posBridge + legDist + sawWidth;
+	if (seatFolds > 1) {
+		translate([0, 0, posUniter])
+		uniter();
+	}
+	
+	posGround2 = posUniter + (plankWidth * seatFolds) + sawWidth;
+	
+	posGround = (seatFolds == 1) ? posGround1 : posGround2;
+	
+	echo(posGround);
+	
 	translate([0, 0, posGround])
 	ground();
 	
-	posBottom = posGround + lengthLower + sawWidth;
-	translate([0, 0, posBottom])
-	bottom();
+	posBottom0 = posGround + lengthLower + sawWidth;
+	for (sfi = [0 : seatFolds-1]) {
+		let (posBottomI = posBottom0 + sfi * (lengthUpper + sawWidth)) {
+			translate([0, 0, posBottomI])
+			bottom();
+		}
+	}
 	
-	posEnd = posBottom + lengthUpper;
-	
+	posEnd = posBottom0 + lengthUpper + (seatFolds - 1) * (lengthUpper + sawWidth);
+		
 	translate([-siWidth/2, 0, 0])
 	sizeIndicator(totalLength);
 	
@@ -193,10 +240,10 @@ module MeditationSeatParts() {
 module MeditationSeat() {
 
 	// The part touching the bottom
-	translate([0, lengthUpper/2, legLower + plankHeight])
+	translate([0, lengthUpper/2, legLower + (1 + sign(seatFolds - 1)) * plankHeight])
 	rotate([0, -angle, 0])
 	rotate([90, 0, 0])
-	bottom();
+	bottomStacked();
 	
 	// The part touching the ground
 	translate([0, lengthLower/2, 0])
