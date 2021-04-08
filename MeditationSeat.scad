@@ -190,7 +190,7 @@ module MeditationSeatParts() {
 	sizeIndicator(plankWidth);
 }
 
-module MeditationSeat(size=15) {
+module MeditationSeat() {
 
 	// The part touching the bottom
 	translate([0, lengthUpper/2, legLower + plankHeight])
