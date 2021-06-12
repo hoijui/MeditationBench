@@ -6,6 +6,13 @@ SPDX-License-Identifier: CC0-1.0
 
 # Meditation Bench/Seat
 
+[![License: CC BY-SA 4.0](
+https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](
+https://creativecommons.org/licenses/by-sa/4.0/)
+[![REUSE status](
+https://api.reuse.software/badge/github.com/hoijui/MeditationBench)](
+https://api.reuse.software/info/github.com/hoijui/MeditationBench)
+
 A simple, wooden seat for the kneeling position.
 
 It can optionally be glued together,
