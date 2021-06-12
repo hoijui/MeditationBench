@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+//
+// SPDX-License-Identifier: CC-BY-SA-4.0
+
 // MeditationSeat.scad - A simple Meditation seat,
 // requireing only one size of planks (+ screws).
 // This is a 3D Model (CAD), which can be edited

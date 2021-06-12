@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # Meditation Bench/Seat
 
 A simple, wooden seat for the kneeling position.
