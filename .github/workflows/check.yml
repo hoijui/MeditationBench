@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+name: check
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  push_to_registry:
+    name: Compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out the repo"
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: OSH-Tool Check/Linting
+        id: osh-check
+        uses: hoijui/osh-tool@master
+        #with:
+        #  repo-path: '.'
+
+      - name: Publis to GH Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
