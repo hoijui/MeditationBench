@@ -4,6 +4,12 @@
 #
 # SPDX-License-Identifier: Unlicense
 
+if ! [ -f MeditationSeat.scad ]
+then
+	>&2 echo "ERROR: You have to start this script from the project root."
+	exit 1
+fi
+
 # Main image
 openscad \
 	--imgsize=1600,1024 \
