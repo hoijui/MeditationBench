@@ -5,7 +5,7 @@ subtitle: 'Produced by the [`osh`-tool](https://gitlab.com/OSEGermany/osh-tool/)
 
 | | |
 | --- | -------- |
-| _version_ | 31ec8aa841da05b30a6052132c2b79cc72697d06 |
+| _version_ | 9915c22322f7a59aa95c947f2e6d1233f5ac16d7 |
 | _version release date_ | N/A |
 | _branch_ | master |
 | _report build date_ | N/A |
