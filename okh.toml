@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+okhv = "OKH-LOSHv1.0"
+name = "MeditationBench"
