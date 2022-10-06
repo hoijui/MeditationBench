@@ -4,11 +4,15 @@
 #
 # SPDX-License-Identifier: Unlicense
 
+output_dir=public
+
 if ! [ -f MeditationSeat.scad ]
 then
 	>&2 echo "ERROR: You have to start this script from the project root."
 	exit 1
 fi
+
+mkdir -p "$output_dir"
 
 # Main image
 openscad \
@@ -16,7 +20,7 @@ openscad \
 	--projection=perspective \
 	--autocenter \
 	--camera=1100,1200,0,0,0,250 \
-	-o MeditationSeat.png \
+	-o "$output_dir/MeditationSeat.png" \
 	MeditationSeat.scad
 
 # Rendering the work template
@@ -27,7 +31,7 @@ openscad \
 	--camera=500,100,1500,0,-50,140 \
 	--render \
 	-D SHOW_ASSEMBLED=false \
-	-o MeditationSeat_work_template.png \
+	-o "$output_dir/MeditationSeat_work_template.png" \
 	MeditationSeat.scad
 
 # Rendering the assembled bench
@@ -38,17 +42,20 @@ openscad \
 	--camera=-700,-400,100,0,-50,100 \
 	--render \
 	-D SHOW_WORK_TEMPLATE=false \
-	-o MeditationSeat_assembled.png \
+	-o "$output_dir/MeditationSeat_assembled.png" \
 	MeditationSeat.scad
 
 # Generate assembled STL
 openscad \
 	-D SHOW_WORK_TEMPLATE=false \
-	-o MeditationSeat_assembled.stl \
+	-o "$output_dir/MeditationSeat_assembled.stl" \
 	MeditationSeat.scad
 
 # Generate work template STL
 openscad \
 	-D SHOW_ASSEMBLED=false \
-	-o MeditationSeat_work_template.stl \
+	-o "$output_dir/MeditationSeat_work_template.stl" \
 	MeditationSeat.scad
+
+echo
+echo "Files genreated in '$output_dir'."
