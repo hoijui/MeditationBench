@@ -29,8 +29,6 @@ jobs:
       - name: OSH-Tool Check/Linting
         id: osh-check
         uses: hoijui/osh-tool@master
-        #with:
-        #  repo-path: '.'
 
       - name: Publish to GH Pages
         uses: peaceiris/actions-gh-pages@v3
