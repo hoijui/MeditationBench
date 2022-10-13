@@ -7,11 +7,11 @@ SPDX-License-Identifier: CC0-1.0
 # Meditation Bench/Seat
 
 [![License: CC BY-SA 4.0](
-https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](
-https://creativecommons.org/licenses/by-sa/4.0/)
+    https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](
+    https://creativecommons.org/licenses/by-sa/4.0/)
 [![REUSE status](
-https://api.reuse.software/badge/github.com/hoijui/MeditationBench)](
-https://api.reuse.software/info/github.com/hoijui/MeditationBench)
+    https://api.reuse.software/badge/github.com/hoijui/MeditationBench)](
+    https://api.reuse.software/info/github.com/hoijui/MeditationBench)
 
 A simple, wooden seat for the kneeling position.
 
@@ -39,7 +39,7 @@ but retain the rest of the properties mentioned above.
   (GER: [Holzleim](https://de.wikipedia.org/wiki/Holzleim#Kaseinleim))
 * (optional) [Linseed oil](https://en.wikipedia.org/wiki/Linseed_oil#Wood_finish)
   (GER: [Rohes Leinöl](https://de.wikipedia.org/wiki/Lein%C3%B6l#Rohes_Lein%C3%B6l)
-  oder [Leinöl-Firnis](https://de.wikipedia.org/wiki/Lein%C3%B6l#Lein%C3%B6lfirnis())
+  oder [Leinöl-Firnis](https://de.wikipedia.org/wiki/Lein%C3%B6l#Lein%C3%B6lfirnis()))
 
 ### Tools
 
