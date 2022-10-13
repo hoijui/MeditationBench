@@ -12,6 +12,9 @@ SPDX-License-Identifier: CC0-1.0
 [![REUSE status](
     https://api.reuse.software/badge/github.com/hoijui/MeditationBench)](
     https://api.reuse.software/info/github.com/hoijui/MeditationBench)
+[![OSH Report](
+   https://img.shields.io/badge/OSH-Report-yellow)](
+   https://hoijui.github.io/MeditationBench/osh-report.html)
 
 A simple, wooden seat for the kneeling position.
 
