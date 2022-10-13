@@ -28,15 +28,16 @@ max-width: 360em;
 <h1 class="title"><a href="https://github.com/hoijui/MeditationBench">MeditationBench</a> - <a href="https://en.wikipedia.org/wiki/Open-source_hardware">OSH</a> quality report</h1>
 <p class="subtitle">Produced by the <a href="https://gitlab.com/OSEGermany/osh-tool/"><code>osh</code>-tool</a></p>
 </header>
+<h2 id="project-meta-data">Project meta-data</h2>
 <table>
 <tbody>
 <tr class="odd">
 <td><em>version</em></td>
-<td>891d919aaa2c1dc9762e48ae84e5a0bca520c3d0</td>
+<td>6e74acbb038fca469ea6b2461458fe0de0915fb1</td>
 </tr>
 <tr class="even">
 <td><em>version release date</em></td>
-<td>2022-10-03 18:55:49</td>
+<td>2022-10-06 14:40:48</td>
 </tr>
 <tr class="odd">
 <td><em>branch</em></td>
@@ -44,7 +45,7 @@ max-width: 360em;
 </tr>
 <tr class="even">
 <td><em>report build date</em></td>
-<td>2022-10-03 18:59:36</td>
+<td>2022-10-13 18:07:28</td>
 </tr>
 <tr class="odd">
 <td><em>licenses</em></td>
@@ -52,6 +53,30 @@ max-width: 360em;
 </tr>
 </tbody>
 </table>
+<h2 id="report-tools">Report tools</h2>
+<table>
+<thead>
+<tr class="header">
+<th><a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a> tool</th>
+<th>version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://gitlab.com/OSEGermany/osh-tool/"><code>osh</code></a></td>
+<td>0.1.0</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/OPEN-NEXT/LOSH-OKH-tool"><code>okh</code></a></td>
+<td>0.3.1</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/hoijui/projvar/"><code>projvar</code></a></td>
+<td>0.11.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="report">Report</h2>
 <table>
 <colgroup>
 <col style="width: 11%"></col>
@@ -92,6 +117,16 @@ max-width: 360em;
 <td></td>
 </tr>
 <tr class="even">
+<td><font color="red">failed</font></td>
+<td>OKH manifest content</td>
+<td><font color="orange"><strong>Middle</strong></font> - 18:07:28 [WARN] File: ‘./okh.toml’ <br>  Failed to validate: <br>  <br>  # Validation error(s): <br>  Error: <br>  Kind: Required { property: String(“repo”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“version”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“license”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“licensor”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“function”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br> </td>
+</tr>
+<tr class="odd">
+<td><font color="red">failed</font></td>
+<td>REUSE/SPDX Licensing info</td>
+<td><font color="red"><strong>Severe</strong></font> - ERROR Failed to run ‘reuse’; make sure it is in your PATH: Bad file descriptor <br>  Additional info: Could not find command: ‘reuse’. OS error: No such file or directory</td>
+</tr>
+<tr class="even">
 <td><font color="green">passed</font></td>
 <td>No sources in root</td>
 <td></td>
@@ -102,9 +137,9 @@ max-width: 360em;
 <td></td>
 </tr>
 <tr class="even">
-<td><font color="red">failed</font></td>
+<td><font color="green">passed</font></td>
 <td>OKH file exists</td>
-<td><font color="red"><strong>Severe</strong></font> - Open Know-How meta-data file (okh.toml) not found. <br>  Please consider creating it, if this is an OSH project. <br>  See <a href="https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/sample_data/okh-TEMPLATE.toml" class="uri">https://github.com/OPEN-NEXT/OKH-LOSH/blob/master/sample_data/okh-TEMPLATE.toml</a> for a template.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
