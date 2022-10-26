@@ -37,7 +37,7 @@
       "issues": [
         {
           "importance": "Middle",
-          "msg": "18:28:40 [WARN] File: './okh.toml'\\nFailed to validate:\\n\\n# Validation error(s):\\nError:\\n\tKind:    Required { property: String(\"repo\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"version\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"license\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"licensor\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"function\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\n"
+          "msg": "19:37:47 [WARN] File: './okh.toml'\\nFailed to validate:\\n\\n# Validation error(s):\\nError:\\n\tKind:    Required { property: String(\"repo\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"version\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"license\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"licensor\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"function\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\n"
         }
       ]
     },
@@ -67,6 +67,19 @@
     }
   ],
   "stats": {
+    "checks": {
+      "run": 10,
+      "skipped": 1,
+      "passed": 9,
+      "failed": 1,
+      "available": 11
+    },
+    "issues": {
+      "DeveloperFailure": 0,
+      "Severe": 0,
+      "Middle": 1,
+      "Light": 0
+    },
     "openness": 0.9449999928474426
   }
 }
