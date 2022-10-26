@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "name": "README exists",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "REUSE/SPDX Licensing info",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "OKH file exists",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "No sources in root",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "LICENSE exists",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "OKH manifest content",
+      "passed": false,
+      "state": "Bad",
+      "issues": [
+        {
+          "importance": "Middle",
+          "msg": "18:28:40 [WARN] File: './okh.toml'\\nFailed to validate:\\n\\n# Validation error(s):\\nError:\\n\tKind:    Required { property: String(\"repo\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"version\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"license\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"licensor\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"function\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\n"
+        }
+      ]
+    },
+    {
+      "name": "No unwanted files",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "Clean CAD files",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "Might be generated",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "No space in file names",
+      "passed": true,
+      "state": "Perfect",
+      "issues": []
+    }
+  ],
+  "stats": {
+    "openness": 0.9449999928474426
+  }
+}
