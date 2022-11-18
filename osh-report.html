@@ -11,7 +11,8 @@
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <style type="text/css">th {
+  <style type="text/css">
+th {
 border-top: 2px solid #1a1a1a;
 border-bottom: 2px solid #1a1a1a;
 }
@@ -28,7 +29,7 @@ max-width: 360em;
 <h1 class="title"><a href="https://github.com/hoijui/MeditationBench">MeditationBench</a> - <a href="https://en.wikipedia.org/wiki/Open-source_hardware">OSH</a> quality report</h1>
 <p class="subtitle">Produced by the <a href="https://gitlab.com/OSEGermany/osh-tool/"><code>osh</code>-tool</a></p>
 </header>
-<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODIiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iT1NIOiBSZXBvcnQiPjx0aXRsZT5PU0g6IFJlcG9ydDwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iODIiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSIzNSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjM1IiB3aWR0aD0iNDciIGhlaWdodD0iMjAiIGZpbGw9IiM5N2NhMDAiLz48cmVjdCB3aWR0aD0iODIiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIyNTAiPk9TSDwvdGV4dD48dGV4dCB4PSIxODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjI1MCI+T1NIPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI1NzUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjM3MCI+UmVwb3J0PC90ZXh0Pjx0ZXh0IHg9IjU3NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzcwIj5SZXBvcnQ8L3RleHQ+PC9nPjwvc3ZnPg==" alt="OSH Report" /> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQ2IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik9TSCBPcGVubmVzczogOTQuNDklIj48dGl0bGU+T1NIIE9wZW5uZXNzOiA5NC40OSU8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjE0NiIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjkzIiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iOTMiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0iIzk3Y2EwMCIvPjxyZWN0IHdpZHRoPSIxNDYiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iNDc1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI4MzAiPk9TSCBPcGVubmVzczwvdGV4dD48dGV4dCB4PSI0NzUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjgzMCI+T1NIIE9wZW5uZXNzPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxMTg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0MzAiPjk0LjQ5JTwvdGV4dD48dGV4dCB4PSIxMTg1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSI0MzAiPjk0LjQ5JTwvdGV4dD48L2c+PC9zdmc+" alt="OSH Openness" /></p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODIiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iT1NIOiBSZXBvcnQiPjx0aXRsZT5PU0g6IFJlcG9ydDwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iODIiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSIzNSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjM1IiB3aWR0aD0iNDciIGhlaWdodD0iMjAiIGZpbGw9IiNkZmIzMTciLz48cmVjdCB3aWR0aD0iODIiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIyNTAiPk9TSDwvdGV4dD48dGV4dCB4PSIxODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjI1MCI+T1NIPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI1NzUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjM3MCI+UmVwb3J0PC90ZXh0Pjx0ZXh0IHg9IjU3NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzcwIj5SZXBvcnQ8L3RleHQ+PC9nPjwvc3ZnPg==" alt="OSH Report" /> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQ2IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik9TSCBPcGVubmVzczogODkuNTQlIj48dGl0bGU+T1NIIE9wZW5uZXNzOiA4OS41NCU8L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjE0NiIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjkzIiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iOTMiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2RmYjMxNyIvPjxyZWN0IHdpZHRoPSIxNDYiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iNDc1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI4MzAiPk9TSCBPcGVubmVzczwvdGV4dD48dGV4dCB4PSI0NzUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjgzMCI+T1NIIE9wZW5uZXNzPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxMTg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI0MzAiPjg5LjU0JTwvdGV4dD48dGV4dCB4PSIxMTg1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSI0MzAiPjg5LjU0JTwvdGV4dD48L2c+PC9zdmc+" alt="OSH Openness" /></p>
 <h2 id="this-report-in-different-formats">This report in different formats</h2>
 <ul>
 <li><a href="osh-report.md">Markdown</a></li>
@@ -52,7 +53,7 @@ max-width: 360em;
 </tr>
 <tr class="even">
 <td><em>report build date</em></td>
-<td>2022-10-26 19:37:48</td>
+<td>2022-11-18 17:04:55</td>
 </tr>
 <tr class="odd">
 <td><em>licenses</em></td>
@@ -83,7 +84,11 @@ max-width: 360em;
 </tr>
 <tr class="even">
 <td><a href="https://github.com/hoijui/projvar/"><code>projvar</code></a></td>
-<td>0.11.0</td>
+<td>0.12.0</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/hoijui/mle/"><code>mle</code></a></td>
+<td>0.20.0</td>
 </tr>
 </tbody>
 </table>
@@ -130,7 +135,7 @@ max-width: 360em;
 <tr class="even">
 <td><font color="red">failed</font></td>
 <td>OKH manifest content</td>
-<td><font color="orange"><strong>Middle</strong></font> - 19:37:47 [WARN] File: ‘./okh.toml’ <br>  Failed to validate: <br>  <br>  # Validation error(s): <br>  Error: <br>  Kind: Required { property: String(“repo”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“version”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“license”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“licensor”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“function”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br> </td>
+<td><font color="orange"><strong>Middle</strong></font> - 17:04:54 [WARN] File: ‘./okh.toml’ <br>  Failed to validate: <br>  <br>  # Validation error(s): <br>  Error: <br>  Kind: Required { property: String(“repo”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“version”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“license”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“licensor”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br>  Error: <br>  Kind: Required { property: String(“function”) } <br>  Where: <br>  Content: {“name”:“MeditationBench”,“okhv”:“OKH-LOSHv1.0”} <br> </td>
 </tr>
 <tr class="odd">
 <td><font color="green">passed</font></td>
@@ -138,16 +143,21 @@ max-width: 360em;
 <td></td>
 </tr>
 <tr class="even">
+<td><font color="red">failed</font></td>
+<td>No global links to local files</td>
+<td><font color="orange"><strong>Middle</strong></font> - ‘README.md’:15:2<br>  ‘https://hoijui.github.io/MeditationBench/osh-badge-openness.svg’<br>  -&gt;<br>  ‘/osh-badge-openness.svg’<br><hline></hline><br><font color="orange"><strong>Middle</strong></font> - ‘README.md’:15:1<br>  ‘https://hoijui.github.io/MeditationBench/osh-report.html’<br>  -&gt;<br>  ‘/osh-report.html’</td>
+</tr>
+<tr class="odd">
 <td><font color="green">passed</font></td>
 <td>Clean CAD files</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><font color="green">passed</font></td>
 <td>Might be generated</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><font color="green">passed</font></td>
 <td>No space in file names</td>
 <td></td>
@@ -165,7 +175,7 @@ max-width: 360em;
 <tbody>
 <tr class="odd">
 <td>Checks Run</td>
-<td>10</td>
+<td>11</td>
 </tr>
 <tr class="even">
 <td>Checks Skipped</td>
@@ -177,11 +187,11 @@ max-width: 360em;
 </tr>
 <tr class="even">
 <td>Checks Failed</td>
-<td>1</td>
+<td>2</td>
 </tr>
 <tr class="odd">
 <td>Checks Available</td>
-<td>11</td>
+<td>12</td>
 </tr>
 <tr class="even">
 <td>Issues DeveloperFailure</td>
@@ -193,15 +203,15 @@ max-width: 360em;
 </tr>
 <tr class="even">
 <td>Issues Middle</td>
-<td>1</td>
+<td>3</td>
 </tr>
 <tr class="odd">
 <td>Issues Light</td>
-<td>0</td>
+<td>1</td>
 </tr>
 <tr class="even">
 <td>Openness</td>
-<td>0.9449999928474426</td>
+<td>0.8954545259475708</td>
 </tr>
 </tbody>
 </table>

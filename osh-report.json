@@ -37,7 +37,7 @@
       "issues": [
         {
           "importance": "Middle",
-          "msg": "19:37:47 [WARN] File: './okh.toml'\\nFailed to validate:\\n\\n# Validation error(s):\\nError:\\n\tKind:    Required { property: String(\"repo\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"version\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"license\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"licensor\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"function\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\n"
+          "msg": "17:04:54 [WARN] File: './okh.toml'\\nFailed to validate:\\n\\n# Validation error(s):\\nError:\\n\tKind:    Required { property: String(\"repo\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"version\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"license\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"licensor\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"function\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\n"
         }
       ]
     },
@@ -46,6 +46,21 @@
       "passed": true,
       "state": "Perfect",
       "issues": []
+    },
+    {
+      "name": "No global links to local files",
+      "passed": false,
+      "state": "Bad",
+      "issues": [
+        {
+          "importance": "Middle",
+          "msg": "'README.md':15:2<br>&nbsp;    'https://hoijui.github.io/MeditationBench/osh-badge-openness.svg'<br>&nbsp;    -><br>&nbsp;    '/osh-badge-openness.svg'"
+        },
+        {
+          "importance": "Middle",
+          "msg": "'README.md':15:1<br>&nbsp;    'https://hoijui.github.io/MeditationBench/osh-report.html'<br>&nbsp;    -><br>&nbsp;    '/osh-report.html'"
+        }
+      ]
     },
     {
       "name": "Clean CAD files",
@@ -68,18 +83,18 @@
   ],
   "stats": {
     "checks": {
-      "run": 10,
+      "run": 11,
       "skipped": 1,
       "passed": 9,
-      "failed": 1,
-      "available": 11
+      "failed": 2,
+      "available": 12
     },
     "issues": {
       "DeveloperFailure": 0,
       "Severe": 0,
-      "Middle": 1,
-      "Light": 0
+      "Middle": 3,
+      "Light": 1
     },
-    "openness": 0.9449999928474426
+    "openness": 0.8954545259475708
   }
 }
