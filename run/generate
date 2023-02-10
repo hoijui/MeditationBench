@@ -4,9 +4,10 @@
 #
 # SPDX-License-Identifier: Unlicense
 
-output_dir=public
+output_dir="gen/mech"
+src_file="src/mech/MeditationSeat.scad"
 
-if ! [ -f MeditationSeat.scad ]
+if ! [ -f "$src_file" ]
 then
 	>&2 echo "ERROR: You have to start this script from the project root."
 	exit 1
@@ -21,7 +22,7 @@ openscad \
 	--autocenter \
 	--camera=1100,1200,0,0,0,250 \
 	-o "$output_dir/MeditationSeat.png" \
-	MeditationSeat.scad
+	"$src_file"
 
 # Rendering the work template
 openscad \
@@ -32,7 +33,7 @@ openscad \
 	--render \
 	-D SHOW_ASSEMBLED=false \
 	-o "$output_dir/MeditationSeat_work_template.png" \
-	MeditationSeat.scad
+	"$src_file"
 
 # Rendering the assembled bench
 openscad \
@@ -43,19 +44,19 @@ openscad \
 	--render \
 	-D SHOW_WORK_TEMPLATE=false \
 	-o "$output_dir/MeditationSeat_assembled.png" \
-	MeditationSeat.scad
+	"$src_file"
 
 # Generate assembled STL
 openscad \
 	-D SHOW_WORK_TEMPLATE=false \
 	-o "$output_dir/MeditationSeat_assembled.stl" \
-	MeditationSeat.scad
+	"$src_file"
 
 # Generate work template STL
 openscad \
 	-D SHOW_ASSEMBLED=false \
 	-o "$output_dir/MeditationSeat_work_template.stl" \
-	MeditationSeat.scad
+	"$src_file"
 
 echo
 echo "Files genreated in '$output_dir'."
