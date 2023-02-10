@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2021 Robin Vobruba <hoijui.quaero@gmail.com>
+// SPDX-FileCopyrightText: 2021-2023 Robin Vobruba <hoijui.quaero@gmail.com>
 //
-// SPDX-License-Identifier: CC-BY-SA-4.0
+// SPDX-License-Identifier: CERN-OHL-S-2.0
 
 // MeditationSeat.scad - A simple Meditation seat,
 // requireing only one size of planks (+ screws).
