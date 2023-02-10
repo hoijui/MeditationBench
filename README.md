@@ -49,6 +49,7 @@ but retain the rest of the properties mentioned above.
 * [Mitre Saw](https://en.wikipedia.org/wiki/Miter_saw)
   (GER: [Kapp- & Gehrungssäge](https://en.wikipedia.org/wiki/Miter_saw))
 * [Drill press](https://de.wikipedia.org/wiki/St%C3%A4nderbohrmaschine)
-  (GER: [Ständerbohrmaschine](https://de.wikipedia.org/wiki/St%C3%A4nderbohrmaschine))
+  (GER: [Ständerbohrmaschine](https://de.wikipedia.org/wiki/St%C3%A4nderbohrmaschine)
+  oder [Bohrständer](https://de.wikipedia.org/wiki/Bohrst%C3%A4nder))
 * [Sandpaper](https://en.wikipedia.org/wiki/Sandpaper)
   (GER: [Schleifpapier](https://de.wikipedia.org/wiki/Schleifpapier))
