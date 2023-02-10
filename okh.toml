@@ -1,6 +1,21 @@
-# SPDX-FileCopyrightText: 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2022-2023 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: Unlicense
 
 okhv = "OKH-LOSHv1.0"
 name = "MeditationBench"
+
+repo = "https://gitlab.com/hoijui/MeditationBench"
+version = "0.1.0"
+release = "https://gitlab.com/hoijui/MeditationBench/-/tags/meditationbench-0.1.0"
+license = "CERN-OHL-S-2.0"
+licensor = "Robin Vobruba <hoijui.quaero@gmail.com>"
+readme = "README.md"
+image = "gen/mech/MeditationSeat.png"
+documentation-language = "en-US"
+function = ""
+#cpc-patent-class = "D03D 35/00"
+#tsdc = "MEC"
+#bom = "sBoM.csv"
+source = "src/mech/MeditationSeat.scad"
+manufacturing-instructions = "src/mech/MeditationSeat.scad"
