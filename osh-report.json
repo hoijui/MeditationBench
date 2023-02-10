@@ -1,100 +1,183 @@
 {
+  "prelude": {
+    "homepage": "https://github.com/hoijui/osh-tool/",
+    "projVars": {
+      "VERSION_DATE": "2023-02-10 10:02:37",
+      "BUILD_BRANCH": "master",
+      "REPO_RAW_VERSIONED_PREFIX_URL": "https://raw.githubusercontent.com/hoijui/MeditationBench",
+      "REPO_CLONE_URL": "https://github.com/hoijui/MeditationBench",
+      "NAME_MACHINE_READABLE": "MeditationBench",
+      "REPO_CLONE_URL_HTTP": "https://github.com/hoijui/MeditationBench.git",
+      "BUILD_ARCH": "x86_64",
+      "BUILD_DATE": "2023-02-10 10:05:14",
+      "BUILD_HOSTING_URL": "https://hoijui.github.io/MeditationBench",
+      "REPO_COMMIT_PREFIX_URL": "https://github.com/hoijui/MeditationBench/commit",
+      "REPO_VERSIONED_DIR_PREFIX_URL": "https://github.com/hoijui/MeditationBench/tree",
+      "LICENSES": "CC0-1.0, CERN-OHL-S-2.0, Unlicense",
+      "LICENSE": "CERN-OHL-S-2.0",
+      "REPO_ISSUES_URL": "https://github.com/hoijui/MeditationBench/issues",
+      "CI": "true",
+      "BUILD_OS_FAMILY": "unix",
+      "REPO_VERSIONED_FILE_PREFIX_URL": "https://github.com/hoijui/MeditationBench/blob",
+      "BUILD_OS": "Linux",
+      "NAME": "MeditationBench",
+      "REPO_CLONE_URL_SSH": "ssh://git@github.com/hoijui/MeditationBench.git",
+      "VERSION": "8a9257fc638a87a7d10b6e24c7b1b4d3dac978ad",
+      "REPO_WEB_URL": "https://github.com/hoijui/MeditationBench"
+    },
+    "tool_versions": {
+      "osh": "0.2.0-136-gdb7ba38",
+      "okh": "0.3.1-15-gbc9808f",
+      "reuse": "1.0.0",
+      "projvar": "0.14.0-8-g3882353",
+      "mle": "0.21.0-3-ga66b0c4",
+      "osh_dir_std": "0.3.2-6-g2bf3169"
+    }
+  },
   "checks": [
     {
       "name": "README exists",
       "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     },
     {
       "name": "REUSE/SPDX Licensing info",
       "passed": true,
-      "state": "Perfect",
-      "issues": []
-    },
-    {
-      "name": "OKH file exists",
-      "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     },
     {
       "name": "No sources in root",
       "passed": true,
+      "compliance": 1,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "Uses dir standard",
+      "passed": true,
+      "compliance": 0.6800000071525574,
+      "state": "Ok",
+      "issues": [
+        {
+          "severity": "Middle",
+          "msg": "Compliance factor 0.76 is above the minimum expected factor of 0.6; good! :-)"
+        }
+      ]
+    },
+    {
+      "name": "Might be generated",
+      "passed": true,
+      "compliance": 1,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "OKH file exists",
+      "passed": true,
+      "compliance": 1,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "No unwanted files",
+      "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     },
     {
       "name": "LICENSE exists",
       "passed": true,
-      "state": "Perfect",
-      "issues": []
-    },
-    {
-      "name": "OKH manifest content",
-      "passed": false,
-      "state": "Bad",
-      "issues": [
-        {
-          "importance": "Middle",
-          "msg": "17:04:54 [WARN] File: './okh.toml'\\nFailed to validate:\\n\\n# Validation error(s):\\nError:\\n\tKind:    Required { property: String(\"repo\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"version\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"license\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"licensor\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\nError:\\n\tKind:    Required { property: String(\"function\") }\\n\tWhere:   \\n\tContent: {\"name\":\"MeditationBench\",\"okhv\":\"OKH-LOSHv1.0\"}\\n"
-        }
-      ]
-    },
-    {
-      "name": "No unwanted files",
-      "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     },
     {
       "name": "No global links to local files",
-      "passed": false,
-      "state": "Bad",
-      "issues": [
-        {
-          "importance": "Middle",
-          "msg": "'README.md':15:2<br>&nbsp;    'https://hoijui.github.io/MeditationBench/osh-badge-openness.svg'<br>&nbsp;    -><br>&nbsp;    '/osh-badge-openness.svg'"
-        },
-        {
-          "importance": "Middle",
-          "msg": "'README.md':15:1<br>&nbsp;    'https://hoijui.github.io/MeditationBench/osh-report.html'<br>&nbsp;    -><br>&nbsp;    '/osh-report.html'"
-        }
-      ]
-    },
-    {
-      "name": "Clean CAD files",
       "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     },
     {
-      "name": "Might be generated",
+      "name": "Clean CAD files",
       "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     },
     {
       "name": "No space in file names",
       "passed": true,
+      "compliance": 1,
+      "state": "Perfect",
+      "issues": []
+    },
+    {
+      "name": "OKH manifest content",
+      "passed": true,
+      "compliance": 1,
       "state": "Perfect",
       "issues": []
     }
   ],
   "stats": {
     "checks": {
-      "run": 11,
+      "run": 12,
       "skipped": 1,
-      "passed": 9,
-      "failed": 2,
-      "available": 12
+      "passed": 12,
+      "failed": 0,
+      "available": 13,
+      "complianceSum": 11.68000000715256,
+      "weightsSum": 6.199999995529652,
+      "weightedComplianceSum": 5.880000002682209
     },
     "issues": {
+      "High": 0,
       "DeveloperFailure": 0,
-      "Severe": 0,
-      "Middle": 3,
-      "Light": 1
+      "Low": 1,
+      "Middle": 1
     },
-    "openness": 0.8954545259475708
+    "ratings": {
+      "compliance": {
+        "name": "OSH Tool Compliance",
+        "factor": 0.9483871459960938,
+        "percent": "94.84",
+        "color": "green",
+        "badgeUrl": "https://img.shields.io/badge/OSH%20Tool%20Compliance-94.84%25-green"
+      },
+      "openness": {
+        "name": "OSH Openness",
+        "factor": 0.9420290589332581,
+        "percent": "94.20",
+        "color": "green",
+        "badgeUrl": "https://img.shields.io/badge/OSH%20Openness-94.20%25-green"
+      },
+      "hardware": {
+        "name": "is hardware",
+        "factor": 0.9520000219345093,
+        "percent": "95.20",
+        "color": "green",
+        "badgeUrl": "https://img.shields.io/badge/is%20hardware-95.20%25-green"
+      },
+      "quality": {
+        "name": "OSH Documentation Quality",
+        "factor": 0.9189873933792114,
+        "percent": "91.90",
+        "color": "green",
+        "badgeUrl": "https://img.shields.io/badge/OSH%20Documentation%20Quality-91.90%25-green"
+      },
+      "machineReadability": {
+        "name": "OSH Machine Readability",
+        "factor": 0.9386972784996033,
+        "percent": "93.87",
+        "color": "green",
+        "badgeUrl": "https://img.shields.io/badge/OSH%20Machine%20Readability-93.87%25-green"
+      }
+    }
   }
 }
