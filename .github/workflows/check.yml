@@ -40,9 +40,9 @@ jobs:
             > /home/runner/work/_temp/_github_home/.gitconfig
 
       # TODO This is experimental, and the output is unused as of now
-      - name: Generate with OpenSCAD
-        uses: flat35hd99/openscad-actions@master
-        run: scripts/generate
+      #- name: Generate with OpenSCAD
+      #  uses: flat35hd99/openscad-actions@master
+      #  run: scripts/generate
         #with:
         #  scad_file: test/test.scad
         #  output_file: test.stl
