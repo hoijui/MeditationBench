@@ -26,6 +26,14 @@ jobs:
           printf "[safe]\n\tdirectory = /github/workspace" \
             > /home/runner/work/_temp/_github_home/.gitconfig
 
+      # TODO This is experimental, and the output is unused as of now
+      - name: Generate with OpenSCAD
+        uses: flat35hd99/openscad-actions@master
+        run: scripts/generate
+        #with:
+        #  scad_file: test/test.scad
+        #  output_file: test.stl
+
       - name: OSH-Tool Check/Linting
         id: osh-check
         uses: hoijui/osh-tool@master
