@@ -5,7 +5,7 @@
 okhv = "OKH-LOSHv1.0"
 name = "MeditationBench"
 
-repo = "https://gitlab.com/hoijui/MeditationBench"
+repo = "https://github.com/hoijui/MeditationBench"
 version = "0.1.0"
 #release = "https://github.com/hoijui/MeditationBench/-/tags/meditationbench-0.1.0"
 license = "CERN-OHL-S-2.0"
