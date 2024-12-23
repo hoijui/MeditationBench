@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2022-2023 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2022-2024 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: Unlicense
 
-name: Deploy GitHub Pages
+name: Check with OSH-Tool
 
 on:
   push:
