@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2022-2023 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2022-2024 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: Unlicense
 
@@ -9,13 +9,20 @@ repo = "https://github.com/hoijui/MeditationBench"
 version = "0.1.0"
 #release = "https://github.com/hoijui/MeditationBench/-/tags/meditationbench-0.1.0"
 license = "CERN-OHL-S-2.0"
-licensor = "Robin Vobruba <hoijui.quaero@gmail.com>"
+licensor = "Robin Vobruba (Open Source Ecology Germany e.V.) <hoijui.quaero@gmail.com>"
 readme = "README.md"
 image = "gen/mech/MeditationSeat.png"
+technology-readiness-level = "OTRL-4"
+documentation-readiness-level = "ODRL-1"
+standard-compliance = "DIN SPEC 3105"
 documentation-language = "en-US"
-function = "A parametrized design of a fully compostable/burnable, fold-for-transport type meditation bench, made up of only wood, and requireing only two tools to produce, and one plank of wood plus dowels as material."
-#cpc-patent-class = "D03D 35/00"
+function = "A parametrized design of a fully compostable/burnable, fold-for-transport type meditation bench, made up of only wood. It requires only two tools to produce, and one plank of wood plus dowels as material."
+cpc-patent-class = "A47C 16/04" # Prayer-stools; Kneeling stools; Kneeling supports
+#cpc-patent-class = "A47C 1/00" # Chairs adapted for special purposes
+#cpc-patent-class = "A47C 4/04" # Folding chairs with inflexible seats
 #tsdc = "MEC"
 #bom = "sBoM.csv"
-source = "src/mech/MeditationSeat.scad"
+source = [
+  "src/mech/MeditationSeat.scad"
+  ]
 manufacturing-instructions = "src/mech/MeditationSeat.scad"
