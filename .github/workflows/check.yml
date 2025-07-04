@@ -26,12 +26,12 @@ jobs:
     name: Compile
     runs-on: ubuntu-latest
     steps:
-      - name: "Check out the repo"
+      - name: Check out the sources
         uses: actions/checkout@v4
         with:
           submodules: true
 
-      - name: Fix checkout ownership
+      - name: OSH-Tool - Fix checkout ownership
         run: |
           # HACK Workaround for bug:
           # https://github.com/actions/runner/issues/2033
@@ -56,7 +56,6 @@ jobs:
         with:
           path: "public/"
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
